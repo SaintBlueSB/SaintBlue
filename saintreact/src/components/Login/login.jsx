@@ -38,7 +38,7 @@ function Login() {
         }
     
         try {
-            const response = await fetch("https://www.saintblue.com.br:5000/new_user", {
+            const response = await fetch("http://192.168.1.145:5001/new_user", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -88,7 +88,7 @@ function Login() {
         const senha = e.target.senha.value;
     
         try {
-            const response = await fetch("https://www.saintblue.com.br:5000/login", {
+            const response = await fetch("http://192.168.1.145:5001/login", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
